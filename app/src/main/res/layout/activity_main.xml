@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.bluemix.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/passBox"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/passText"
+        android:layout_alignBottom="@+id/passText"
+        android:layout_toRightOf="@+id/passText"
+        android:layout_toEndOf="@+id/passText" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:id="@+id/loginButt"
+        android:layout_below="@+id/passBox"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Create an Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/createAccButt"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/loginButt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sign in on Kratos"
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/emailText"
+        android:textSize="14sp"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:id="@+id/passBox"
+        android:layout_alignBaseline="@+id/emailText"
+        android:layout_alignBottom="@+id/emailText"
+        android:layout_toRightOf="@+id/emailText"
+        android:layout_toEndOf="@+id/emailText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passText"
+        android:textSize="14sp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/passBox"
+        android:layout_alignLeft="@+id/emailText"
+        android:layout_alignStart="@+id/emailText" />
+
+</RelativeLayout>
